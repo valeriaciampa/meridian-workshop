@@ -1,0 +1,25 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Frontend (Vue + Vite)",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["vite"],
+      "cwd": "client",
+      "port": 3000
+    },
+    {
+      "name": "Backend (FastAPI)",
+      "runtimeExecutable": "C:/Users/valeria.ciampa/AppData/Local/Programs/Python/Python313/python.exe",
+      "runtimeArgs": ["main.py"],
+      "cwd": "server",
+      "port": 8001
+    },
+    {
+      "name": "Capabilities Deck",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["node_modules/.bin/serve", "proposal", "-l", "4000", "--no-clipboard"],
+      "port": 4000
+    }
+  ]
+}

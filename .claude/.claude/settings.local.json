@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where uv *)",
+      "Bash(where npm *)",
+      "Bash(where node *)",
+      "Bash(where python *)",
+      "Bash(python3 -c \"import fastapi, uvicorn, pydantic; print\\('deps ok'\\)\")",
+      "Bash(\"/c/Users/valeria.ciampa/AppData/Local/Programs/Python/Python313/python.exe\" -c \"import fastapi, uvicorn; print\\('ok'\\)\")",
+      "Bash(\"/c/Users/valeria.ciampa/AppData/Local/Programs/Python/Python313/python.exe\" -m pip install fastapi uvicorn pydantic)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Items:', d['summary']['total_items'], '| Total cost: $' + str\\(d['summary']['total_estimated_cost']\\) + ' | Within budget: $' + str\\(d['summary']['total_within_budget']\\)\\); print\\('First rec:', json.dumps\\(d['recommendations'][0], indent=2\\)\\)\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill /PID 8720 /F)",
+      "Bash(\"/c/Users/valeria.ciampa/AppData/Local/Programs/Python/Python313/python.exe\" main.py)",
+      "PowerShell(Stop-Process -Id 8720 -Force; Start-Sleep 1; $proc = Start-Process -FilePath \"C:\\\\Users\\\\valeria.ciampa\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -ArgumentList \"main.py\" -WorkingDirectory \"C:\\\\Users\\\\valeria.ciampa\\\\Downloads\\\\Claude\\\\meridian-workshop-main\\\\server\" -PassThru -RedirectStandardOutput \"C:\\\\temp\\\\backend.log\" -RedirectStandardError \"C:\\\\temp\\\\backend_err.log\" -NoNewWindow; Start-Sleep 3; \\(Invoke-WebRequest -Uri \"http://localhost:8001/api/restocking?budget=500000\" -UseBasicParsing\\).Content.Substring\\(0, 400\\))",
+      "mcp__playwright__browser_navigate"
+    ]
+  }
+}

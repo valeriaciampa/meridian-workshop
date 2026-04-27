@@ -1,0 +1,25 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Frontend (Vue + Vite)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "client",
+      "port": 3000
+    },
+    {
+      "name": "Backend (FastAPI)",
+      "runtimeExecutable": "uv",
+      "runtimeArgs": ["run", "python", "main.py"],
+      "cwd": "server",
+      "port": 8001
+    }
+  ,{
+      "name": "Capabilities Deck",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "proposal", "-l", "4000", "--no-clipboard"],
+      "port": 4000
+    }
+  ]
+}
